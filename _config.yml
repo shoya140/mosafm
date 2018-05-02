@@ -9,7 +9,7 @@ actors:
     url: https://sns.example.com/bob
 author: alice
 description: Coming soon...
-description_long: 界隈の猛者がソフトウェア開発の話題を中心にゆるく話すポッドキャスト番組
+description_long: 様々な分野の猛者がソフトウェア開発の話題を中心に話すポッドキャスト番組
 email: info@example.com
 exclude:
   - docker
