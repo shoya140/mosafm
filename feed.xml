@@ -1,25 +1,22 @@
 ---
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:itunes="https://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="https://search.yahoo.com/mrss/" xml:lang="{{ site.language }}">
-  <channel>
-    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
-    <link>{{ site.url }}/</link>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
     <title>{{ site.title }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <media:keywords>{{ site.keywords }}</media:keywords>
-    <media:category scheme="https://www.itunes.com/dtds/podcast-1.0.dtd">Technology</media:category>
+    <link>{{ site.url }}</link>
     <language>{{ site.language }}</language>
+    <copyright>{{ site.author }}</copyright>
     <itunes:subtitle>{{ site.description | xml_escape }}</itunes:subtitle>
     <itunes:author>{{ site.author }}</itunes:author>
     <itunes:summary>{{ site.description | xml_escape }}</itunes:summary>
-    <itunes:keywords>{{ site.keywords }}</itunes:keywords>
+    <description>{{ site.description | xml_escape }}</description>
     <itunes:owner>
-      <itunes:name>{{ site.author }}</itunes:name>
-      <itunes:email>{{ site.email }}</itunes:email>
+        <itunes:name>{{ site.author }}</itunes:name>
+        <itunes:email>{{ site.email }}</itunes:email>
     </itunes:owner>
-    <itunes:image href="{{ site.url }}/images/artwork.png" />
-    <itunes:category>Technology</itunes:category>
+    <itunes:image href="{{ site.url }}/images/artwork.png"/>
+    <itunes:category text="Technology"/>
     <itunes:explicit>no</itunes:explicit>
     {% for post in site.posts %}
       <item>
@@ -33,7 +30,6 @@
         <itunes:subtitle>{{ post.description }}</itunes:subtitle>
         <itunes:duration>{{ post.duration }}</itunes:duration>
         <itunes:explicit>no</itunes:explicit>
-        <media:thumbnail url="{{ site.url }}/images/artwork.png"/>
       </item>
     {% endfor %}
   </channel>
