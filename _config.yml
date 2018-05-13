@@ -1,16 +1,16 @@
 actors:
-  alice:
-    image_url: /images/actors/alice.png
-    name: alice
-    url: https://sns.example.com/alice
-  bob:
-    image_url: /images/actors/bob.png
-    name: bob
-    url: https://sns.example.com/bob
-author: alice
-description: Coming soon...
+  shoya140:
+    image_url: /images/actors/shoya140.png
+    name: shoya140
+    url: https://shoya.io
+  101kaz:
+    image_url: /images/actors/101kaz.jpg
+    name: 101kaz
+    url: https://kazy.hatenablog.com/
+author: shoya140
+description: 様々な分野の猛者がソフトウェア開発の話題を中心に話すポッドキャスト番組
 description_long: 様々な分野の猛者がソフトウェア開発の話題を中心に話すポッドキャスト番組
-email: info@example.com
+email: mosahq@gmail.com
 exclude:
   - docker
   - docker-compose.yml
@@ -22,10 +22,10 @@ exclude:
 google_analytics:
 hashtag: mosafm
 itunes_podcast_url:
-keywords: comma,separated,keywords
+keywords: podcast, software engineering, productivity
 language: ja
 markdown: kramdown
-permalink: /episode/:title
+permalink: /:title
 sass:
   sass_dir: css
 timezone: Asia/Tokyo
