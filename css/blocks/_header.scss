@@ -1,18 +1,28 @@
+@font-face {
+  font-family: "blanch";
+  src: url("/font/blanch.woff") format("woff");
+}
+
 .header {
-  background-image: url(../images/header.jpg);
   background-size: cover;
   background-position: center;
+  position: relative;
+  background-color: #8198bd;
+  text-align: center;
+  @include media-query(600px) {
+    text-align: left;
+  }
 
   &-description {
-    color: $color-text-light-secondary;
+    color: $color-text-light-primary;
     font-size: 0.9rem;
   }
 
   &-heading {
     color: $color-text-light-primary;
-    text-shadow: 0 1px 5px black;
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 4.0rem;
+    font-family: blanch;
+    line-height: 1.0;
 
     a {
       &,
@@ -25,9 +35,25 @@
   }
 
   &-overlay {
-    background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
-    padding-bottom: 96px;
-    padding-top: 96px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    position: relative;
+    z-index: 10;
+    @include media-query(600px) {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+  }
+
+  &-character {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 70%;
+    z-index: 1;
+    @include media-query(360px) {
+      visibility: hidden;
+    }
   }
 }
