@@ -21,7 +21,7 @@ exclude:
   - vendor
 google_analytics: UA-89650641-3
 hashtag: mosafm
-itunes_podcast_url:
+itunes_podcast_url: https://itunes.apple.com/jp/podcast/mosa-fm/id1384305911?mt=2
 keywords: podcast, software engineering, productivity
 language: ja
 markdown: kramdown
