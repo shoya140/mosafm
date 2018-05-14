@@ -19,7 +19,7 @@ exclude:
   - LICENSE.txt
   - README.md
   - vendor
-google_analytics:
+google_analytics: UA-89650641-3
 hashtag: mosafm
 itunes_podcast_url:
 keywords: podcast, software engineering, productivity
