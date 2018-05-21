@@ -4,10 +4,8 @@
 }
 
 .header {
-  background-size: cover;
-  background-position: center;
   position: relative;
-  background-color: #8198bd;
+  background: linear-gradient(to bottom right, #4795da, #349ec7);
   text-align: center;
   @include media-query(600px) {
     text-align: left;
