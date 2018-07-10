@@ -27,6 +27,10 @@ actors:
     image_url: /images/actors/yumiyon.png
     name: yumiyon
     url: http://piyon.hatenablog.com
+  hozmii:
+    image_url: /images/actors/hozmii.jpg
+    name: hozmii
+    url: https://azpiration.jp
 author: Shoya Ishimaru
 description: 様々な分野の猛者をゲストに迎えてソフトウェア開発の話題を中心にゆるく話すポッドキャスト番組
 description_long: 様々な分野の猛者をゲストに迎えてソフトウェア開発の話題を中心にゆるく話すポッドキャスト番組
